@@ -4,7 +4,8 @@ import {createContext, useEffect, useState} from "react";
 import axios from "axios";
 
 export const StoreContext = createContext(null);
-const url = "http://localhost:4000";
+// const url = "http://localhost:4000";
+const url = "https://sushangatmanitbackend.onrender.com";
 const StoreContextProvider = (props) => {
   const [name, setName] = useState("");
   const [cartItems, setCartItems] = useState({});
