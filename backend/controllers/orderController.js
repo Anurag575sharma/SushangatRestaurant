@@ -7,7 +7,7 @@ import jwt from "jsonwebtoken";
 // const {RAZORPAY_ID_KEY, RAZORPAY_SECRET_KEY} = process.env;
 
 const placeOrder = async (req, res) => {
-  const frontend_url = process.env.FRONTEND_URL;
+  const frontend_url = "https://sushangatrestaurant-frontend.onrender.com/";
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
